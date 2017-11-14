@@ -1,0 +1,1 @@
+irb -r ./csv2tag.rb 

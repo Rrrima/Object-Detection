@@ -1,0 +1,35 @@
+[user]
+	email = luxin433@gmail.com
+	name = luxin433
+[color]
+	ui = auto
+[alias]
+		# aliases without arguments
+	ar = archive
+	br = branch
+	cat = cat-file
+	ci = commit
+	co = checkout
+	di = diff
+	ls = ls-files
+	rp = rev-parse
+	st = status
+	wc = whatchanged
+	# aliases with arguments
+	cl = config -l
+	cr = config --get-regexp
+	des = describe --tags
+	ff = fsck --full --no-reflogs
+	lf = log --date=iso '--pretty=format:"%h - %ad, %an: %s"' #favorite log format
+	lo = log -1 # log for one entity
+	lp = log --pretty=oneline
+	ln = ls-tree --name-only
+	ss = status -s
+	cp = cherry-pick
+	lh = !git ls-files -v |grep "^h "
+	hide = update-index --assume-unchanged
+	unhide = update-index --no-assume-unchanged
+	whatadded = log --diff-filter=A
+[core]
+	ignorecase = true
+	editor = /usr/bin/vim
